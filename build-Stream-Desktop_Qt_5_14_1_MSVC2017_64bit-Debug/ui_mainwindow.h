@@ -41,7 +41,7 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_2;
     QLineEdit *lineEdit_2;
-    QPushButton *pushButton;
+    QPushButton *adminPushButton;
     QWidget *SignUp;
     QWidget *verticalLayoutWidget_2;
     QVBoxLayout *LoginLayout_2;
@@ -113,10 +113,10 @@ public:
 
         LoginLayout->addLayout(horizontalLayout_2);
 
-        pushButton = new QPushButton(verticalLayoutWidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        adminPushButton = new QPushButton(verticalLayoutWidget);
+        adminPushButton->setObjectName(QString::fromUtf8("adminPushButton"));
 
-        LoginLayout->addWidget(pushButton);
+        LoginLayout->addWidget(adminPushButton);
 
         u8->addTab(Login, QString());
         SignUp = new QWidget();
@@ -190,7 +190,7 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", " \350\264\246\345\217\267:    ", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", " \345\257\206\347\240\201:     ", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "\347\231\273\351\231\206", nullptr));
+        adminPushButton->setText(QCoreApplication::translate("MainWindow", "\347\231\273\351\231\206", nullptr));
         u8->setTabText(u8->indexOf(Login), QCoreApplication::translate("MainWindow", "\347\231\273\345\275\225", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", " \350\264\246\345\217\267:    ", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", " \345\257\206\347\240\201:     ", nullptr));

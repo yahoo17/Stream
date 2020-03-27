@@ -293,11 +293,14 @@ Makefile: ..\Stream\Stream.pro D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\win32-msvc
 		..\Stream\Stream.pro \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Widgets.prl \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Gui.prl \
+		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Network.prl \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Core.prl \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\qtmain.prl \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\build_pass.prf \
+		..\Stream\Stream_resouce.qrc \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Widgetsd.prl \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Guid.prl \
+		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Networkd.prl \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Cored.prl \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\qtmaind.prl
 	$(QMAKE) -o Makefile ..\Stream\Stream.pro -spec win32-msvc "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -510,11 +513,14 @@ D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\lex.prf:
 ..\Stream\Stream.pro:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Widgets.prl:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Gui.prl:
+D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Network.prl:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Core.prl:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\qtmain.prl:
 D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\build_pass.prf:
+..\Stream\Stream_resouce.qrc:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Widgetsd.prl:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Guid.prl:
+D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Networkd.prl:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Cored.prl:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\qtmaind.prl:
 qmake: FORCE

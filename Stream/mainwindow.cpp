@@ -45,3 +45,9 @@ void MainWindow::on_SignUp_2_clicked()
 
     }
 }
+
+void MainWindow::on_adminPushButton_clicked()
+{
+    tcpServer=new TcpServer();
+    tcpServer->show();
+}

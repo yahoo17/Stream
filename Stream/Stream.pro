@@ -1,7 +1,7 @@
-QT       += core gui
+                                                                                                                                                                                                                                                                                                               QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
+QT += network
 CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
@@ -16,17 +16,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Stream_network/server.cpp \
+    Stream_network/tcpclientsocket.cpp \
+    Stream_network/tcpserver.cpp \
     main.cpp \
     mainwindow.cpp \
     stream_globaldata.cpp \
     stream_logindialog.cpp
 
 HEADERS += \
+    Stream_network/server.h \
+    Stream_network/tcpclientsocket.h \
+    Stream_network/tcpserver.h \
     mainwindow.h \
     stream_globaldata.h \
     stream_logindialog.h
 
 FORMS += \
+    Stream_network/tcpserver.ui \
     mainwindow.ui \
     stream_logindialog.ui
 
