@@ -17,10 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    stream_globaldata.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    stream_globaldata.h
 
 FORMS += \
     mainwindow.ui
