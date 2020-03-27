@@ -18,16 +18,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    stream_globaldata.cpp
+    stream_globaldata.cpp \
+    stream_logindialog.cpp
 
 HEADERS += \
     mainwindow.h \
-    stream_globaldata.h
+    stream_globaldata.h \
+    stream_logindialog.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    stream_logindialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Stream_resouce.qrc

@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
@@ -43,7 +42,6 @@ public:
     QLabel *label_2;
     QLineEdit *lineEdit_2;
     QPushButton *pushButton;
-    QFrame *frame;
     QWidget *SignUp;
     QWidget *verticalLayoutWidget_2;
     QVBoxLayout *LoginLayout_2;
@@ -67,10 +65,11 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         tabWidget = new QWidget(centralwidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(0, 0, 751, 571));
+        tabWidget->setGeometry(QRect(0, 20, 751, 571));
         u8 = new QTabWidget(tabWidget);
         u8->setObjectName(QString::fromUtf8("u8"));
-        u8->setGeometry(QRect(0, 0, 741, 551));
+        u8->setGeometry(QRect(80, 0, 741, 551));
+        u8->setStyleSheet(QString::fromUtf8(""));
         Login = new QWidget();
         Login->setObjectName(QString::fromUtf8("Login"));
         verticalLayoutWidget = new QWidget(Login);
@@ -119,11 +118,6 @@ public:
 
         LoginLayout->addWidget(pushButton);
 
-        frame = new QFrame(Login);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(180, 60, 120, 80));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
         u8->addTab(Login, QString());
         SignUp = new QWidget();
         SignUp->setObjectName(QString::fromUtf8("SignUp"));

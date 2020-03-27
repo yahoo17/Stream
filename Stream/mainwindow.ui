@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
+      <y>20</y>
       <width>751</width>
       <height>571</height>
      </rect>
@@ -26,11 +26,14 @@
     <widget class="QTabWidget" name="u8">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>80</x>
        <y>0</y>
        <width>741</width>
        <height>551</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
      </property>
      <property name="currentIndex">
       <number>0</number>
@@ -89,22 +92,6 @@
          </widget>
         </item>
        </layout>
-      </widget>
-      <widget class="QFrame" name="frame">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>60</y>
-         <width>120</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="SignUp">
