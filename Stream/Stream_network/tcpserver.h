@@ -27,6 +27,7 @@ private:
 public slots:
     void slotCreateServer();
     void updateServer(QString ,int);
+
 };
 
 #endif // TCPSERVER_H

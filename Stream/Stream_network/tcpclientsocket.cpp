@@ -2,8 +2,8 @@
 
 TcpClientSocket::TcpClientSocket(QObject *parent)
 {
-    connect(this,SIGNAL(readRead()),this,SLOT(dataReceived()));
-    connect(this,SIGNAL(disconnect()),this,SLOT(slotDisconnected()));
+    connect(this,SIGNAL(readyRead()),this,SLOT(dataReceived()));
+    connect(this,SIGNAL(disconnected()),this,SLOT(slotDisconnected()));
 
 }
 
@@ -24,5 +24,5 @@ void TcpClientSocket::dataReceived()
 
 void TcpClientSocket::slotDisconnected()
 {
-    emit disconnected(this->socketDescriptor());
+    emit intdisconnected(this->socketDescriptor());
 }

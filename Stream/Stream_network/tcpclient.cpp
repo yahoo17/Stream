@@ -12,6 +12,7 @@ TcpClient::TcpClient(QWidget *parent) :
     ui->portLineEdit->setText(QString::number(port));
     serverIP=new QHostAddress();
     ui->serverIPLineEdit->setText(QString("127.0.0.1"));
+    ui->userNameLineEdit->setText(QString("Tom"));
     connect(ui->enterPushBotton,SIGNAL(clicked()),this,SLOT(slotEnter()));
     connect(ui->sendPushButton,SIGNAL(clicked()),this,SLOT(slotSend()));
 
@@ -42,7 +43,9 @@ void TcpClient::slotSend()
         return;
     }
     QString msg=userName+":"+ui->sendLineEdit->text();
-    tcpSocket->write(msg.toLatin1(),msg.length());
+    std::string message=msg.toStdString();
+    const char * ch=message.c_str();
+    tcpSocket->write(ch,message.length());
     ui->sendLineEdit->clear();
 }
 void TcpClient::slotConnected()
@@ -52,7 +55,12 @@ void TcpClient::slotConnected()
 
     int length=0;
     QString msg=userName+u8"进入了房间";
-    if((length=tcpSocket->write(msg.toLatin1(),msg.length()))!=msg.length())
+    qDebug()<<msg;
+    std::string message=msg.toStdString();
+//    qDebug()<<message;
+    const char * ch=message.c_str();
+    qDebug()<<ch;
+    if((length=tcpSocket->write(ch,message.length()))!=message.length())
     {
         return;
     }
@@ -67,13 +75,13 @@ void TcpClient::slotEnter()
         if(!serverIP->setAddress(ip))
         {
 
-            QMessageBox::information(this,u8"error",u8"server ip address error!");
+            QMessageBox::information(this,u8"警告信息",u8"你的 server ip address error!");
             return;
         }
         //检查用户名是否为空
         if(ui->userNameLineEdit->text()=="")
         {
-            QMessageBox::information(this,u8"error",u8"User name error!");
+            QMessageBox::information(this,u8"警告信息",u8"你的User name error!");
             return;
         }
 
@@ -97,9 +105,12 @@ void TcpClient::slotEnter()
     else
     {
         int length=0;
-        QString msg=userName+u8"离开了房间";
+        QString msg=userName+tr("离开了房间");
+        std::string message=msg.toStdString();
+        const char * ch=message.c_str();
+
         //通知服务器我要离开房间了
-        if((length=tcpSocket->write(msg.toLatin1(),msg.length()))!=msg.length())
+        if((length=tcpSocket->write(ch,message.length()))!=message.length())
         {
             return;
         }

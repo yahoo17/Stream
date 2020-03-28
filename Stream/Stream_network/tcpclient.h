@@ -7,6 +7,9 @@
 #include <QMessageBox>
 #include <QHostInfo>
 #include <QObject>
+#include  <string>
+#include <QDebug>
+#include <QtDebug>
 namespace Ui {
 class TcpClient;
 }

@@ -11,9 +11,14 @@ void Server::incomingConnection(qintptr socketDescriptor)
     TcpClientSocket * tcpClientSocket =new TcpClientSocket(this);
     //
     connect(tcpClientSocket,SIGNAL(updateClients(QString ,int)),this,SLOT(updateClients(QString ,int)));
-    connect(tcpClientSocket,SIGNAL(disconnected(int)),this,SLOT(disconnected(int)));
+    connect(tcpClientSocket,SIGNAL(intdisconnected(int)),this,SLOT(slotDisconnected(int)));
 
-    tcpClientSocket->setSocketDescriptor(socketDescriptor);
+    if(tcpClientSocket->setSocketDescriptor(socketDescriptor))
+    {
+        bool test;
+    }
+    else
+        bool  test;
     tcpClientSocketList.append(tcpClientSocket);
 
 }
@@ -39,7 +44,9 @@ void Server::updateClients(QString msg,int length)
     {
         QTcpSocket * item =tcpClientSocketList.at(i);
         //不知道啥意思
-        if(item->write(msg.toLatin1(),length)!=length)
+        std::string message=msg.toStdString();
+        const char * ch=message.c_str();
+        if(item->write(ch,length)!=length)
         {
             continue;
         }
