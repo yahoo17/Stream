@@ -19,19 +19,21 @@ public:
     explicit TcpClient(QWidget *parent = nullptr);
     ~TcpClient();
 
-private:
-    Ui::TcpClient *ui;
-    bool status;
-    int port;
-    QHostAddress *serverIP;
-    QString userName;
-    QTcpSocket *tcpSocket;
+
 public slots:
     void slotEnter();
     void slotConnected();
     void slotDisconnected();
     void dataReceived();
     void slotSend();
+private:
+    Ui::TcpClient *ui;
+    bool status;
+    int port;
+private:
+    QHostAddress *serverIP;
+    QString userName;
+    QTcpSocket *tcpSocket;
 };
 
 #endif // TCPCLIENT_H

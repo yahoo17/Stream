@@ -8,6 +8,7 @@ TcpClient::TcpClient(QWidget *parent) :
     ui->setupUi(this);
     status=false;
     port=8010;
+
     ui->portLineEdit->setText(QString::number(port));
     serverIP=new QHostAddress();
 
@@ -18,19 +19,43 @@ TcpClient::TcpClient(QWidget *parent) :
 }
 void TcpClient::dataReceived()
 {
+    while (tcpSocket->bytesAvailable())
+    {
+        QByteArray datagram;
+        datagram.resize(tcpSocket->bytesAvailable());
 
+        tcpSocket->read(datagram.data(),datagram.size());
+
+        QString msg=datagram.data();
+        ui->contentListWidget->addItem(msg.left(datagram.size()));
+    }
 }
 void TcpClient::slotDisconnected()
 {
-
+    ui->sendPushButton->setEnabled(false);
+    ui->enterPushBotton->setText(u8"进入聊天室");
 }
 void TcpClient::slotSend()
 {
-
+    if(ui->sendLineEdit->text()=="")
+    {
+        return;
+    }
+    QString msg=userName+":"+ui->sendLineEdit->text();
+    tcpSocket->write(msg.toLatin1(),msg.length());
+    ui->sendLineEdit->clear();
 }
 void TcpClient::slotConnected()
 {
+    ui->sendLineEdit->setEnabled(true);
+    ui->enterPushBotton->setText(u8"离开");
 
+    int length=0;
+    QString msg=userName+u8"进入了房间";
+    if((length=tcpSocket->write(msg.toLatin1(),msg.length()))!=msg.length())
+    {
+        return;
+    }
 }
 void TcpClient::slotEnter()
 {
@@ -58,11 +83,12 @@ void TcpClient::slotEnter()
         tcpSocket=new QTcpSocket(this);
 
         connect(tcpSocket,SIGNAL(connected()),this,SLOT(slotConnected()));
-        connect(tcpSocket,SIGNAL(disconnnected()),this,SLOT(slotDisconnected()));
-        connect(tcpSocket,SIGNAL(readRead()),this,SLOT(dataReceived()));
+        connect(tcpSocket,SIGNAL(disconnected()),this,SLOT(slotDisconnected()));
+        connect(tcpSocket,SIGNAL(readyRead()),this,SLOT(dataReceived()));
 
         //与服务器相连接
         tcpSocket->connectToHost(*serverIP,port);
+
         status=true;
 
 
