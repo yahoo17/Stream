@@ -26,8 +26,8 @@ void TcpClient::dataReceived()
         datagram.resize(tcpSocket->bytesAvailable());
 
         tcpSocket->read(datagram.data(),datagram.size());
-
-        QString msg=datagram.data();
+//        QString::fromLocal8Bit
+        QString msg=( datagram.data());
         ui->contentListWidget->addItem(msg.left(datagram.size()));
     }
 }

@@ -43,6 +43,7 @@ void Server::updateClients(QString msg,int length)
     for(int i=0;i<tcpClientSocketList.count();i++)
     {
         QTcpSocket * item =tcpClientSocketList.at(i);
+//        item->write(msg.toLocal8Bit());
         //不知道啥意思
         std::string message=msg.toStdString();
         const char * ch=message.c_str();
