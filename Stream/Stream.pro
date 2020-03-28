@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     Stream_network/server.cpp \
+    Stream_network/tcpclient.cpp \
     Stream_network/tcpclientsocket.cpp \
     Stream_network/tcpserver.cpp \
     main.cpp \
@@ -26,6 +27,7 @@ SOURCES += \
 
 HEADERS += \
     Stream_network/server.h \
+    Stream_network/tcpclient.h \
     Stream_network/tcpclientsocket.h \
     Stream_network/tcpserver.h \
     mainwindow.h \
@@ -33,6 +35,7 @@ HEADERS += \
     stream_logindialog.h
 
 FORMS += \
+    Stream_network/tcpclient.ui \
     Stream_network/tcpserver.ui \
     mainwindow.ui \
     stream_logindialog.ui

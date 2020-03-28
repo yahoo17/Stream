@@ -51,3 +51,9 @@ void MainWindow::on_adminPushButton_clicked()
     tcpServer=new TcpServer();
     tcpServer->show();
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    tcpClient=new TcpClient();
+    tcpClient->show();
+}
