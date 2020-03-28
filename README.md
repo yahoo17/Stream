@@ -7,10 +7,7 @@ Brief introduction:  a game platform software similar to steam. Game developers 
 ## Building Stream
 
 * QT is the official build system for Stream.
-* The [Stream Platforms Guide]([Stream]()/docs/SupportedPlatforms.md )
-* [Stream Platforms Guide](Stream/docs/SupportedPlatforms.md)
-* 
-* contains information on
+* The[Stream Platforms Guide](Stream/docs/SupportedPlatforms.md)contains information on
   platform support for Stream.
 
 

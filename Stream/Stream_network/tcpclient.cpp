@@ -11,7 +11,7 @@ TcpClient::TcpClient(QWidget *parent) :
 
     ui->portLineEdit->setText(QString::number(port));
     serverIP=new QHostAddress();
-
+    ui->serverIPLineEdit->setText(QString("127.0.0.1"));
     connect(ui->enterPushBotton,SIGNAL(clicked()),this,SLOT(slotEnter()));
     connect(ui->sendPushButton,SIGNAL(clicked()),this,SLOT(slotSend()));
 
@@ -47,7 +47,7 @@ void TcpClient::slotSend()
 }
 void TcpClient::slotConnected()
 {
-    ui->sendLineEdit->setEnabled(true);
+    ui->sendPushButton->setEnabled(true);
     ui->enterPushBotton->setText(u8"离开");
 
     int length=0;

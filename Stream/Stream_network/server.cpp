@@ -5,7 +5,7 @@ Server::Server(QObject *parent, int port):QTcpServer(parent)
     //监听来自任何IP地址的 传到我这指定的端口号
     listen(QHostAddress::Any,port);
 }
-void Server::incomingConnection(int socketDescriptor)
+void Server::incomingConnection(qintptr socketDescriptor)
 {
     // 创建一个新的socket与客户端通信
     TcpClientSocket * tcpClientSocket =new TcpClientSocket(this);
@@ -34,7 +34,7 @@ void Server::slotDisconnected(int descriptior)
 void Server::updateClients(QString msg,int length)
 {
 
-    emit    updateServer(msg,length);
+    emit updateServer(msg,length);
     for(int i=0;i<tcpClientSocketList.count();i++)
     {
         QTcpSocket * item =tcpClientSocketList.at(i);

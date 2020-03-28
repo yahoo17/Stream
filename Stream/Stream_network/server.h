@@ -17,7 +17,7 @@ public slots:
     void updateClients(QString, int);
     void slotDisconnected(int);
 protected:
-    void incomingConnection(int socketDescriptor);
+    void incomingConnection(qintptr socketDescriptor);
 };
 
 #endif // SERVER_H
