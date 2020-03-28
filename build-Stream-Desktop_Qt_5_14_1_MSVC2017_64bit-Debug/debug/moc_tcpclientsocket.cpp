@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_TcpClientSocket_t {
     QByteArrayData data[6];
-    char stringdata0[74];
+    char stringdata0[77];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,13 +35,14 @@ static const qt_meta_stringdata_TcpClientSocket_t qt_meta_stringdata_TcpClientSo
 QT_MOC_LITERAL(0, 0, 15), // "TcpClientSocket"
 QT_MOC_LITERAL(1, 16, 13), // "updateClients"
 QT_MOC_LITERAL(2, 30, 0), // ""
-QT_MOC_LITERAL(3, 31, 12), // "disconnected"
-QT_MOC_LITERAL(4, 44, 12), // "dataReceived"
-QT_MOC_LITERAL(5, 57, 16) // "slotDisconnected"
+QT_MOC_LITERAL(3, 31, 15), // "intdisconnected"
+QT_MOC_LITERAL(4, 47, 12), // "dataReceived"
+QT_MOC_LITERAL(5, 60, 16) // "slotDisconnected"
 
     },
     "TcpClientSocket\0updateClients\0\0"
-    "disconnected\0dataReceived\0slotDisconnected"
+    "intdisconnected\0dataReceived\0"
+    "slotDisconnected"
 };
 #undef QT_MOC_LITERAL
 
@@ -84,7 +85,7 @@ void TcpClientSocket::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->updateClients((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 1: _t->disconnected((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 1: _t->intdisconnected((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 2: _t->dataReceived(); break;
         case 3: _t->slotDisconnected(); break;
         default: ;
@@ -100,7 +101,7 @@ void TcpClientSocket::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         }
         {
             using _t = void (TcpClientSocket::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&TcpClientSocket::disconnected)) {
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&TcpClientSocket::intdisconnected)) {
                 *result = 1;
                 return;
             }
@@ -156,7 +157,7 @@ void TcpClientSocket::updateClients(QString _t1, int _t2)
 }
 
 // SIGNAL 1
-void TcpClientSocket::disconnected(int _t1)
+void TcpClientSocket::intdisconnected(int _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
