@@ -20,6 +20,7 @@ TcpClient::TcpClient(QWidget *parent) :
 }
 void TcpClient::dataReceived()
 {
+    //这里是客户端真正收到信息并且展示的地方
     while (tcpSocket->bytesAvailable())
     {
         QByteArray datagram;
@@ -28,7 +29,7 @@ void TcpClient::dataReceived()
         tcpSocket->read(datagram.data(),datagram.size());
 //        QString::fromLocal8Bit
         QString msg=( datagram.data());
-        ui->contentListWidget->addItem(msg.left(datagram.size()));
+        ui->contentListWidget->addItem(msg);
     }
 }
 void TcpClient::slotDisconnected()
@@ -43,9 +44,11 @@ void TcpClient::slotSend()
         return;
     }
     QString msg=userName+":"+ui->sendLineEdit->text();
-    std::string message=msg.toStdString();
-    const char * ch=message.c_str();
-    tcpSocket->write(ch,message.length());
+    QByteArray bytes = msg.toUtf8();
+//    std::string message=msg.toStdString();
+//    const char * ch=message.c_str();
+//    tcpSocket->write(ch,message.length());
+    tcpSocket->write(bytes);
     ui->sendLineEdit->clear();
 }
 void TcpClient::slotConnected()
@@ -55,15 +58,17 @@ void TcpClient::slotConnected()
 
     int length=0;
     QString msg=userName+u8"进入了房间";
-    qDebug()<<msg;
-    std::string message=msg.toStdString();
+//    qDebug()<<msg;
+//    std::string message=msg.toStdString();
 //    qDebug()<<message;
-    const char * ch=message.c_str();
-    qDebug()<<ch;
-    if((length=tcpSocket->write(ch,message.length()))!=message.length())
-    {
-        return;
-    }
+//    const char * ch=message.c_str();
+    QByteArray bytes = msg.toUtf8();
+    tcpSocket->write(bytes);
+//    qDebug()<<ch;
+//    if((length=tcpSocket->write(ch,message.length()))!=message.length())
+//    {
+//        return;
+//    }
 }
 void TcpClient::slotEnter()
 {
@@ -105,15 +110,17 @@ void TcpClient::slotEnter()
     else
     {
         int length=0;
-        QString msg=userName+tr("离开了房间");
-        std::string message=msg.toStdString();
-        const char * ch=message.c_str();
+        QString msg=userName+u8"离开了房间";
+        QByteArray bytes = msg.toUtf8();
+        tcpSocket->write(bytes);
+//        std::string message=msg.toStdString();
+//        const char * ch=message.c_str();
 
-        //通知服务器我要离开房间了
-        if((length=tcpSocket->write(ch,message.length()))!=message.length())
-        {
-            return;
-        }
+//        //通知服务器我要离开房间了
+//        if((length=tcpSocket->write(ch,message.length()))!=message.length())
+//        {
+//            return;
+//        }
         //断开后会发出disconnected的信号
         tcpSocket->disconnectFromHost();
 

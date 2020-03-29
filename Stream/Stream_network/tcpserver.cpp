@@ -19,7 +19,7 @@ void TcpServer::slotCreateServer()
 }
 void TcpServer::updateServer(QString msg,int length)
 {
-    ui->ContentListWidget->addItem(msg.left(length));
+    ui->ContentListWidget->addItem(msg);
 }
 TcpServer::~TcpServer()
 {

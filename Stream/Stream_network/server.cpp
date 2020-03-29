@@ -40,16 +40,20 @@ void Server::updateClients(QString msg,int length)
 {
 
     emit updateServer(msg,length);
+    //轮询更新每一个服务器这里保存的与客户端的tcpclient连接,这里是正确的
     for(int i=0;i<tcpClientSocketList.count();i++)
     {
         QTcpSocket * item =tcpClientSocketList.at(i);
+        QByteArray bytes = msg.toUtf8();
+
+        item->write(bytes);
 //        item->write(msg.toLocal8Bit());
         //不知道啥意思
-        std::string message=msg.toStdString();
-        const char * ch=message.c_str();
-        if(item->write(ch,length)!=length)
-        {
-            continue;
-        }
+//        std::string message=msg.toStdString();
+//        const char * ch=message.c_str();
+//        if(item->write(ch,length)!=length)
+//        {
+//            continue;
+//        }
     }
 }

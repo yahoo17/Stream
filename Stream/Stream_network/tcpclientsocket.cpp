@@ -11,11 +11,16 @@ void TcpClientSocket::dataReceived()
 {
     while (bytesAvailable()>0)
     {
-        int length=bytesAvailable();
-        char buffer[1024];
-        read(buffer,length);
 
-        QString msg=buffer;
+        int length=bytesAvailable();
+//        char buffer[1024];
+
+//        read(buffer,length);
+
+        QByteArray bytes=readAll();
+
+
+        QString msg=bytes;
         emit updateClients(msg,length);
 
 
