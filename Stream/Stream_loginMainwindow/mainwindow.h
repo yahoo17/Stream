@@ -1,11 +1,12 @@
 ﻿#ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "stream_globaldata.h"
+#include "Stream_globaldata/stream_globaldata.h"
 #include "Stream_network/tcpserver.h"
 #include "Stream_network/tcpclient.h"
 #include <QMainWindow>
 #include <string>
 #include <QMessageBox>
+#include "Stream_hall/stream_hall.h"
 using namespace  std;
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,15 +22,15 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    TcpServer * tcpServer;
-    TcpClient * tcpClient;
+
 public:
     string getAccountName()const;
     string getPassword()const;
 private slots:
     void on_SignUp_2_clicked();
-
     void on_adminPushButton_clicked();
-    void on_pushButton_clicked();
+private:
+    Stream_hall * hallInstance;
+
 };
 #endif // MAINWINDOW_H

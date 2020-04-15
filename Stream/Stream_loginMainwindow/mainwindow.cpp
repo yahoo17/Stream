@@ -48,12 +48,8 @@ void MainWindow::on_SignUp_2_clicked()
 
 void MainWindow::on_adminPushButton_clicked()
 {
-    tcpServer=new TcpServer();
-    tcpServer->show();
+
+    hallInstance=new Stream_hall();
+    hallInstance->show();
 }
 
-void MainWindow::on_pushButton_clicked()
-{
-    tcpClient=new TcpClient();
-    tcpClient->show();
-}

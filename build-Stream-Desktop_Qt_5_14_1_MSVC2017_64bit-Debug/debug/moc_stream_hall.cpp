@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'mainwindow.h'
+** Meta object code from reading C++ file 'stream_hall.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.14.1)
 **
@@ -7,11 +7,11 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../Stream/Stream_loginMainwindow/mainwindow.h"
+#include "../../Stream/Stream_hall/stream_hall.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'mainwindow.h' doesn't include <QObject>."
+#error "The header file 'stream_hall.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.14.1. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -21,29 +21,29 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_MainWindow_t {
+struct qt_meta_stringdata_Stream_hall_t {
     QByteArrayData data[4];
-    char stringdata0[59];
+    char stringdata0[76];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_Stream_hall_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
+static const qt_meta_stringdata_Stream_hall_t qt_meta_stringdata_Stream_hall = {
     {
-QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 19), // "on_SignUp_2_clicked"
-QT_MOC_LITERAL(2, 31, 0), // ""
-QT_MOC_LITERAL(3, 32, 26) // "on_adminPushButton_clicked"
+QT_MOC_LITERAL(0, 0, 11), // "Stream_hall"
+QT_MOC_LITERAL(1, 12, 31), // "on_createRoomPushButton_clicked"
+QT_MOC_LITERAL(2, 44, 0), // ""
+QT_MOC_LITERAL(3, 45, 30) // "on_enterRoomPushButton_clicked"
 
     },
-    "MainWindow\0on_SignUp_2_clicked\0\0"
-    "on_adminPushButton_clicked"
+    "Stream_hall\0on_createRoomPushButton_clicked\0"
+    "\0on_enterRoomPushButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_MainWindow[] = {
+static const uint qt_meta_data_Stream_hall[] = {
 
  // content:
        8,       // revision
@@ -67,46 +67,46 @@ static const uint qt_meta_data_MainWindow[] = {
        0        // eod
 };
 
-void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Stream_hall::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<MainWindow *>(_o);
+        auto *_t = static_cast<Stream_hall *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_SignUp_2_clicked(); break;
-        case 1: _t->on_adminPushButton_clicked(); break;
+        case 0: _t->on_createRoomPushButton_clicked(); break;
+        case 1: _t->on_enterRoomPushButton_clicked(); break;
         default: ;
         }
     }
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_MainWindow.data,
-    qt_meta_data_MainWindow,
+QT_INIT_METAOBJECT const QMetaObject Stream_hall::staticMetaObject = { {
+    QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
+    qt_meta_stringdata_Stream_hall.data,
+    qt_meta_data_Stream_hall,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *MainWindow::metaObject() const
+const QMetaObject *Stream_hall::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MainWindow::qt_metacast(const char *_clname)
+void *Stream_hall::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_MainWindow.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_Stream_hall.stringdata0))
         return static_cast<void*>(this);
-    return QMainWindow::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
-int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Stream_hall::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
