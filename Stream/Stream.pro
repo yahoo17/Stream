@@ -19,6 +19,7 @@ SOURCES += \
     Stream_hall/stream_hall.cpp \
     Stream_network/server.cpp \
     Stream_network/stream_networkcontroller.cpp \
+    Stream_network/stream_networkinfo.cpp \
     Stream_network/tcpclient.cpp \
     Stream_network/tcpclientsocket.cpp \
     Stream_network/tcpserver.cpp \    
@@ -30,6 +31,7 @@ HEADERS += \
     Stream_hall/stream_hall.h \
     Stream_network/server.h \
     Stream_network/stream_networkcontroller.h \
+    Stream_network/stream_networkinfo.h \
     Stream_network/tcpclient.h \
     Stream_network/tcpclientsocket.h \
     Stream_network/tcpserver.h \

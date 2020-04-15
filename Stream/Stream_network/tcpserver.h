@@ -7,6 +7,8 @@
 #include <QGridLayout>
 #include <QLabel>
 #include "server.h"
+#include "Stream_globaldata/stream_globaldata.h"
+#include "stream_networkinfo.h"
 namespace Ui {
 class TcpServer;
 }

@@ -10,6 +10,11 @@ Stream_GLOBALDATA* Stream_GLOBALDATA::getInstance()
     else
         return m_instance;
 }
+
+QString Stream_GLOBALDATA::getIPAddress()
+{
+    return Stream_networkInfo::getIP();
+}
 Stream_GLOBALDATA::Stream_GLOBALDATA()
 {
 

@@ -9,6 +9,9 @@ TcpServer::TcpServer(QWidget *parent) :
     port=8010;
     ui->portLineEdit->setText(QString::number(port));
     connect(ui->createPushButton,SIGNAL(clicked()),this,SLOT(slotCreateServer()));
+    QString ipAddress=Stream_networkInfo::getIp();
+    ui->IPTextEdit->setText(ipAddress);
+
 }
 void TcpServer::slotCreateServer()
 {

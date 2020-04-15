@@ -23,14 +23,31 @@
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="3" column="0">
-     <widget class="QLabel" name="label">
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="portLineEdit"/>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>端口号:</string>
+       <string>                                  TCP Server</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="0" colspan="2">
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>你的IP地址:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0" colspan="3">
+     <widget class="QPushButton" name="createPushButton">
+      <property name="text">
+       <string>创建聊天室</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="3">
      <widget class="QListWidget" name="ContentListWidget">
       <property name="maximumSize">
        <size>
@@ -40,22 +57,15 @@
       </property>
      </widget>
     </item>
-    <item row="5" column="0" colspan="2">
-     <widget class="QPushButton" name="createPushButton">
+    <item row="4" column="0">
+     <widget class="QLabel" name="label">
       <property name="text">
-       <string>创建聊天室</string>
+       <string>端口号:</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="0" colspan="2">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>                                  TCP Server</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="portLineEdit"/>
+    <item row="1" column="1" colspan="2">
+     <widget class="QTextEdit" name="IPTextEdit"/>
     </item>
    </layout>
   </widget>

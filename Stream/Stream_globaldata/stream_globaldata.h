@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <QApplication>
+#include <Stream_network/stream_networkinfo.h>
 using namespace  std;
 
 class Stream_GLOBALDATA
@@ -12,7 +13,7 @@ public:
 public:
     static Stream_GLOBALDATA * m_instance;
     static Stream_GLOBALDATA * getInstance();
-
+    static QString getIPAddress();
 public:
     void saveIt();
 public:
