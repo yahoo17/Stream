@@ -3,6 +3,7 @@
 #include "Stream_globaldata/stream_globaldata.h"
 #include "Stream_network/tcpserver.h"
 #include "Stream_network/tcpclient.h"
+#include "stream_loginsaving.h"
 #include <QMainWindow>
 #include <string>
 #include <QMessageBox>
@@ -26,6 +27,8 @@ private:
 public:
     string getAccountName()const;
     string getPassword()const;
+    QString getLoginUserName();
+    QString getLoginPassword();
 private slots:
     void on_SignUp_2_clicked();
     void on_adminPushButton_clicked();

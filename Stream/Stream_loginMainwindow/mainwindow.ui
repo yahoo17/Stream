@@ -64,7 +64,7 @@
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit"/>
+             <widget class="QLineEdit" name="userLoginNamelineEdit"/>
             </item>
            </layout>
           </item>
@@ -80,7 +80,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2"/>
+           <widget class="QLineEdit" name="userLoginpasswordLineEdit"/>
           </item>
          </layout>
         </item>

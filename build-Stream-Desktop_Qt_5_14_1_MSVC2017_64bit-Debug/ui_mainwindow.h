@@ -37,10 +37,10 @@ public:
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
-    QLineEdit *lineEdit;
+    QLineEdit *userLoginNamelineEdit;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_2;
-    QLineEdit *lineEdit_2;
+    QLineEdit *userLoginpasswordLineEdit;
     QPushButton *adminPushButton;
     QWidget *SignUp;
     QWidget *verticalLayoutWidget_2;
@@ -87,10 +87,10 @@ public:
 
         horizontalLayout->addWidget(label);
 
-        lineEdit = new QLineEdit(verticalLayoutWidget);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        userLoginNamelineEdit = new QLineEdit(verticalLayoutWidget);
+        userLoginNamelineEdit->setObjectName(QString::fromUtf8("userLoginNamelineEdit"));
 
-        horizontalLayout->addWidget(lineEdit);
+        horizontalLayout->addWidget(userLoginNamelineEdit);
 
 
         gridLayout->addLayout(horizontalLayout, 1, 0, 1, 1);
@@ -105,10 +105,10 @@ public:
 
         horizontalLayout_2->addWidget(label_2);
 
-        lineEdit_2 = new QLineEdit(verticalLayoutWidget);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        userLoginpasswordLineEdit = new QLineEdit(verticalLayoutWidget);
+        userLoginpasswordLineEdit->setObjectName(QString::fromUtf8("userLoginpasswordLineEdit"));
 
-        horizontalLayout_2->addWidget(lineEdit_2);
+        horizontalLayout_2->addWidget(userLoginpasswordLineEdit);
 
 
         LoginLayout->addLayout(horizontalLayout_2);

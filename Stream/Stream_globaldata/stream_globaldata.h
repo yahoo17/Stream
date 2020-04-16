@@ -2,6 +2,7 @@
 #define STREAM_GLOBALDATA_H
 #include <string>
 #include <fstream>
+#include <QFile>
 #include <QApplication>
 #include <Stream_network/stream_networkinfo.h>
 using namespace  std;

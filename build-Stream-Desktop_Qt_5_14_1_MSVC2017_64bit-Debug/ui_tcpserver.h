@@ -17,6 +17,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -26,11 +27,13 @@ class Ui_TcpServer
 public:
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
-    QLabel *label;
-    QListWidget *ContentListWidget;
-    QPushButton *createPushButton;
-    QLabel *label_2;
     QLineEdit *portLineEdit;
+    QLabel *label_2;
+    QLabel *label_3;
+    QPushButton *createPushButton;
+    QListWidget *ContentListWidget;
+    QLabel *label;
+    QTextEdit *IPTextEdit;
 
     void setupUi(QDialog *TcpServer)
     {
@@ -43,31 +46,41 @@ public:
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(gridLayoutWidget);
-        label->setObjectName(QString::fromUtf8("label"));
+        portLineEdit = new QLineEdit(gridLayoutWidget);
+        portLineEdit->setObjectName(QString::fromUtf8("portLineEdit"));
 
-        gridLayout->addWidget(label, 3, 0, 1, 1);
+        gridLayout->addWidget(portLineEdit, 4, 2, 1, 1);
+
+        label_2 = new QLabel(gridLayoutWidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+
+        gridLayout->addWidget(label_2, 0, 0, 1, 3);
+
+        label_3 = new QLabel(gridLayoutWidget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+
+        gridLayout->addWidget(label_3, 1, 0, 1, 1);
+
+        createPushButton = new QPushButton(gridLayoutWidget);
+        createPushButton->setObjectName(QString::fromUtf8("createPushButton"));
+
+        gridLayout->addWidget(createPushButton, 6, 0, 1, 3);
 
         ContentListWidget = new QListWidget(gridLayoutWidget);
         ContentListWidget->setObjectName(QString::fromUtf8("ContentListWidget"));
         ContentListWidget->setMaximumSize(QSize(1770, 450));
 
-        gridLayout->addWidget(ContentListWidget, 1, 0, 1, 2);
+        gridLayout->addWidget(ContentListWidget, 2, 0, 1, 3);
 
-        createPushButton = new QPushButton(gridLayoutWidget);
-        createPushButton->setObjectName(QString::fromUtf8("createPushButton"));
+        label = new QLabel(gridLayoutWidget);
+        label->setObjectName(QString::fromUtf8("label"));
 
-        gridLayout->addWidget(createPushButton, 5, 0, 1, 2);
+        gridLayout->addWidget(label, 4, 0, 1, 1);
 
-        label_2 = new QLabel(gridLayoutWidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        IPTextEdit = new QTextEdit(gridLayoutWidget);
+        IPTextEdit->setObjectName(QString::fromUtf8("IPTextEdit"));
 
-        gridLayout->addWidget(label_2, 0, 0, 1, 2);
-
-        portLineEdit = new QLineEdit(gridLayoutWidget);
-        portLineEdit->setObjectName(QString::fromUtf8("portLineEdit"));
-
-        gridLayout->addWidget(portLineEdit, 3, 1, 1, 1);
+        gridLayout->addWidget(IPTextEdit, 1, 1, 1, 2);
 
 
         retranslateUi(TcpServer);
@@ -78,9 +91,10 @@ public:
     void retranslateUi(QDialog *TcpServer)
     {
         TcpServer->setWindowTitle(QCoreApplication::translate("TcpServer", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("TcpServer", "\347\253\257\345\217\243\345\217\267:", nullptr));
-        createPushButton->setText(QCoreApplication::translate("TcpServer", "\345\210\233\345\273\272\350\201\212\345\244\251\345\256\244", nullptr));
         label_2->setText(QCoreApplication::translate("TcpServer", "                                  TCP Server", nullptr));
+        label_3->setText(QCoreApplication::translate("TcpServer", "\344\275\240\347\232\204IP\345\234\260\345\235\200:", nullptr));
+        createPushButton->setText(QCoreApplication::translate("TcpServer", "\345\210\233\345\273\272\350\201\212\345\244\251\345\256\244", nullptr));
+        label->setText(QCoreApplication::translate("TcpServer", "\347\253\257\345\217\243\345\217\267:", nullptr));
     } // retranslateUi
 
 };

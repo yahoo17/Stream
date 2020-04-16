@@ -22,8 +22,5 @@ Stream_GLOBALDATA::Stream_GLOBALDATA()
 
 void Stream_GLOBALDATA::saveIt()
 {
-    fstream file((qApp->applicationDirPath()+"password.txt").toStdString(),ios::trunc|ios::in|ios::out);
-    file<<currentAccountNumber<<"\n";
-    file<<currentPassword<<"\n";
 
 }
