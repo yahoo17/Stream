@@ -10,6 +10,10 @@ Brief introduction:  a game platform software similar to steam. Game developers 
 * The[Stream Platforms Guide](Stream/docs/SupportedPlatforms.md)contains information on
   platform support for Stream.
 
+### If you are new to Stream
+
+* The [QuickStart](Stream/docs/Quick Start) show you how to run it;
+
 
 
 
