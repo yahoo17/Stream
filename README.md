@@ -14,7 +14,7 @@ Brief introduction:  a game platform software similar to steam. Game developers 
 
 ### If you are new to Stream
 
-* The [QuickStart](Stream/docs/Quick Start) show you how to run it;
+* The [QuickStart](Stream/docs/Quick Start.md) show you how to run it;
 
 
 
