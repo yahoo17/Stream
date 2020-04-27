@@ -1,0 +1,12 @@
+1.项目地址: https://github.com/yahoo17/Stream
+
+2.本项目的结构大概是
+Stream下面有源码和docs文件夹 
+docs文件夹里面存了开发的文档和迭代的材料
+
+3.编译环境也在SupportedPlatform里提供了详尽的描述,要编译的话请先把Stream文件夹拷贝出来, Qt对中文的支持比较差
+
+4.部分文档用markdown格式编写
+有部分支持跳转
+
+5.docs里面有演示的视频
