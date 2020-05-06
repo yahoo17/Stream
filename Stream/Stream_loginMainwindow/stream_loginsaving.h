@@ -3,6 +3,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <string>
+#include <QMessageBox>
 #include "Stream_globaldata/stream_globaldata.h"
 class Stream_loginSaving
 {

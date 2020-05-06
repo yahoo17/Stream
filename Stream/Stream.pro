@@ -16,6 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Stream_globaldata/stream_datastructure.cpp \
     Stream_hall/stream_hall.cpp \
     Stream_network/server.cpp \
     Stream_network/stream_networkcontroller.cpp \
@@ -28,6 +29,7 @@ SOURCES += \
     Stream_globaldata/stream_globaldata.cpp \
     main.cpp
 HEADERS += \
+    Stream_globaldata/stream_datastructure.h \
     Stream_hall/stream_hall.h \
     Stream_network/server.h \
     Stream_network/stream_networkcontroller.h \

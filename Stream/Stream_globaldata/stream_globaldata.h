@@ -7,6 +7,7 @@
 #include <Stream_network/stream_networkinfo.h>
 using namespace  std;
 
+
 class Stream_GLOBALDATA
 {
 public:

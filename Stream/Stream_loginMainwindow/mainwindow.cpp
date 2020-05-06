@@ -59,20 +59,26 @@ void MainWindow::on_SignUp_2_clicked()
     }
     else
     {
-        QMessageBox::warning(this,u8"警告",u8"请输入正确的账号密码");
+        QMessageBox::warning(this,u8"警告",u8"账号密码不能为空");
     }
 }
 
 void MainWindow::on_adminPushButton_clicked()
 {
 
-    bool success=Stream_loginSaving::checkOnDisk(getLoginUserName(),getLoginPassword());
+    bool success=false;
+    success=Stream_loginSaving::checkOnDisk(getLoginUserName(),getLoginPassword());
 
-    if(success)
+    if(success==true)
     {
             hallInstance=new Stream_hall();
             hallInstance->show();
 
+    }
+    else
+    {
+        QMessageBox::warning(this,u8"警告",u8"账号密码错误");
+        ui->userLoginpasswordLineEdit->clear();
     }
 
 }
