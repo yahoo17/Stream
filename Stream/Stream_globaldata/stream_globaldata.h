@@ -23,4 +23,5 @@ public:
     string * currentPassword;
 };
 
+
 #endif // STREAM_GLOBALDATA_H

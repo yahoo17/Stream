@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Stream_globaldata/stream_datastructure.cpp \
     Stream_hall/stream_hall.cpp \
+    Stream_hall/stream_switchpage.cpp \
     Stream_network/server.cpp \
     Stream_network/stream_networkcontroller.cpp \
     Stream_network/stream_networkinfo.cpp \
@@ -31,6 +32,7 @@ SOURCES += \
 HEADERS += \
     Stream_globaldata/stream_datastructure.h \
     Stream_hall/stream_hall.h \
+    Stream_hall/stream_switchpage.h \
     Stream_network/server.h \
     Stream_network/stream_networkcontroller.h \
     Stream_network/stream_networkinfo.h \

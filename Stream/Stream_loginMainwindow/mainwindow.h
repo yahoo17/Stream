@@ -4,10 +4,11 @@
 #include "Stream_network/tcpserver.h"
 #include "Stream_network/tcpclient.h"
 #include "stream_loginsaving.h"
+#include "Stream_hall/stream_switchpage.h"
 #include <QMainWindow>
 #include <string>
 #include <QMessageBox>
-#include "Stream_hall/stream_hall.h"
+
 using namespace  std;
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -33,7 +34,8 @@ private slots:
     void on_SignUp_2_clicked();
     void on_adminPushButton_clicked();
 private:
-    Stream_hall * hallInstance;
+
+    Stream_SwitchPage * hallDaemonInstance;
 
 };
 #endif // MAINWINDOW_H
