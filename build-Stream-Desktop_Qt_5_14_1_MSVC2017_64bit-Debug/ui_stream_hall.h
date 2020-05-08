@@ -98,7 +98,7 @@ public:
         toolBox->addItem(page_2, QString::fromUtf8("Page 2"));
         stackedWidget = new QStackedWidget(scrollAreaWidgetContents);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
-        stackedWidget->setGeometry(QRect(10, 20, 491, 301));
+        stackedWidget->setGeometry(QRect(10, 20, 671, 301));
         page_3 = new QWidget();
         page_3->setObjectName(QString::fromUtf8("page_3"));
         openGLWidget = new QOpenGLWidget(page_3);
@@ -106,13 +106,13 @@ public:
         openGLWidget->setGeometry(QRect(10, 10, 411, 241));
         calendarWidget = new QCalendarWidget(page_3);
         calendarWidget->setObjectName(QString::fromUtf8("calendarWidget"));
-        calendarWidget->setGeometry(QRect(50, 30, 248, 183));
+        calendarWidget->setGeometry(QRect(420, 40, 248, 183));
         stackedWidget->addWidget(page_3);
         page_4 = new QWidget();
         page_4->setObjectName(QString::fromUtf8("page_4"));
         openGLWidget_2 = new QOpenGLWidget(page_4);
         openGLWidget_2->setObjectName(QString::fromUtf8("openGLWidget_2"));
-        openGLWidget_2->setGeometry(QRect(30, 30, 381, 211));
+        openGLWidget_2->setGeometry(QRect(150, 50, 381, 211));
         stackedWidget->addWidget(page_4);
         horizontalLayoutWidget = new QWidget(scrollAreaWidgetContents);
         horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
@@ -181,6 +181,7 @@ public:
         treeWidget = new QTreeWidget(Stream_hall);
         treeWidget->headerItem()->setText(0, QString());
         QTreeWidgetItem *__qtreewidgetitem = new QTreeWidgetItem(treeWidget);
+        __qtreewidgetitem->setFlags(Qt::ItemIsDragEnabled|Qt::ItemIsDropEnabled|Qt::ItemIsUserCheckable|Qt::ItemIsEnabled);
         new QTreeWidgetItem(__qtreewidgetitem);
         QTreeWidgetItem *__qtreewidgetitem1 = new QTreeWidgetItem(treeWidget);
         new QTreeWidgetItem(__qtreewidgetitem1);
@@ -202,7 +203,7 @@ public:
         retranslateUi(Stream_hall);
 
         toolBox->setCurrentIndex(0);
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
         stackedWidget_2->setCurrentIndex(1);
         stackedWidget_3->setCurrentIndex(1);
         stackedWidget_4->setCurrentIndex(1);

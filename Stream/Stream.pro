@@ -2,6 +2,7 @@
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 QT += network
+QT += sql
 CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
@@ -16,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Stream_database/stream_databasecontroller.cpp \
     Stream_globaldata/stream_datastructure.cpp \
     Stream_hall/stream_hall.cpp \
     Stream_hall/stream_switchpage.cpp \
@@ -24,12 +26,13 @@ SOURCES += \
     Stream_network/stream_networkinfo.cpp \
     Stream_network/tcpclient.cpp \
     Stream_network/tcpclientsocket.cpp \
-    Stream_network/tcpserver.cpp \    
+    Stream_network/tcpserver.cpp \
     Stream_loginMainwindow/mainwindow.cpp \
     Stream_loginMainwindow/stream_loginsaving.cpp \
     Stream_globaldata/stream_globaldata.cpp \
     main.cpp
 HEADERS += \
+    Stream_database/stream_databasecontroller.h \
     Stream_globaldata/stream_datastructure.h \
     Stream_hall/stream_hall.h \
     Stream_hall/stream_switchpage.h \
@@ -42,14 +45,14 @@ HEADERS += \
     Stream_loginMainwindow/mainwindow.h \
     Stream_loginMainwindow/stream_loginsaving.h \
     Stream_globaldata/stream_globaldata.h \
-    stream_logindialog.h
+
 
 FORMS += \
     Stream_hall/stream_hall.ui \
     Stream_network/tcpclient.ui \
     Stream_network/tcpserver.ui \
     Stream_loginMainwindow/mainwindow.ui \
-    Stream_loginMainwindow/stream_logindialog.ui
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

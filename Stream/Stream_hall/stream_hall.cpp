@@ -52,5 +52,5 @@ void Stream_hall::switchPage()
 
 void Stream_hall::on_pushButton_clicked()
 {
-    switchPage();
+
 }
