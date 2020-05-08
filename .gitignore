@@ -1,0 +1,11 @@
+
+*.Release
+*.obj
+*.exe
+*.ilk
+*.pdb
+*.pdb
+*.obj
+*.Debug
+*.Release
+*.pdb

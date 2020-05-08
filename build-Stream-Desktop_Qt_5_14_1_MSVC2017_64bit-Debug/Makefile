@@ -265,7 +265,6 @@ Makefile: ..\Stream\Stream.pro D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\win32-msvc
 		D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\qt_config.prf \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\win32-msvc\qmake.conf \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\spec_post.prf \
-		.qmake.stash \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\exclusive_builds.prf \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\common\msvc-version.conf \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\toolchain.prf \
@@ -297,6 +296,7 @@ Makefile: ..\Stream\Stream.pro D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\win32-msvc
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Sql.prl \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Core.prl \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\qtmain.prl \
+		.qmake.stash \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\build_pass.prf \
 		..\Stream\Stream_resouce.qrc \
 		D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Widgetsd.prl \
@@ -487,7 +487,6 @@ D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\qt_functions.prf:
 D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\qt_config.prf:
 D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\win32-msvc\qmake.conf:
 D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\spec_post.prf:
-.qmake.stash:
 D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\exclusive_builds.prf:
 D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\common\msvc-version.conf:
 D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\toolchain.prf:
@@ -519,6 +518,7 @@ D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Network.prl:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Sql.prl:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Core.prl:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\qtmain.prl:
+.qmake.stash:
 D:\Qt5.14.1\5.14.1\msvc2017_64\mkspecs\features\build_pass.prf:
 ..\Stream\Stream_resouce.qrc:
 D:\Qt5.14.1\5.14.1\msvc2017_64\lib\Qt5Widgetsd.prl:
