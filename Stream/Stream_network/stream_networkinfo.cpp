@@ -23,6 +23,7 @@ QString Stream_networkInfo::getIp()
     QList<QHostAddress> list=QNetworkInterface::allAddresses();
     for(auto x:list)
     {
+
         if(x.protocol()==QAbstractSocket::IPv4Protocol)
         {
             temp+=x.toString()+"\n";

@@ -11,11 +11,12 @@ circularlist::circularlist(int t1, int t2)
     tail=new listNode(t2);
     head->next=tail;
     tail->next=head;
+    cur=head;
 }
 
 listNode *circularlist::getNextNode()
 {
-    static listNode * cur=head;
+
     cur=cur->next;
     return  cur;
 }

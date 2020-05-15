@@ -22,7 +22,7 @@ public:
 public:
     listNode * head;
     listNode * tail;
-
+    listNode * cur;
 };
 
 class stream_datastructure

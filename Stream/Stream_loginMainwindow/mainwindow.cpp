@@ -48,10 +48,6 @@ void MainWindow::on_SignUp_2_clicked()
     if(!getPassword().empty()&&!getAccountName().empty())
     {
         string a=getPassword();
-//        *Stream_GLOBALDATA::getInstance()->currentPassword=getPassword();
-//        *Stream_GLOBALDATA::getInstance()->currentAccountNumber=getAccountName();
-//        string a=getPassword();
-//        string b=getAccountName();
         Stream_loginSaving::saveOnDisk(getAccountName(),getPassword());
         QMessageBox::information(this,u8"注册成功",u8"请用你的账号密码登陆(关闭此对话框后,将会清空注册的输入框");
 
@@ -71,8 +67,7 @@ void MainWindow::on_adminPushButton_clicked()
 
     if(success==true)
     {
-            hallInstance=new Stream_hall();
-            hallInstance->show();
+          hallDaemonInstance=new Stream_SwitchPage();
 
     }
     else
