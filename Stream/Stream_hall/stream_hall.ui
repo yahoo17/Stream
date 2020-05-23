@@ -108,40 +108,54 @@
        <height>301</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="page_3">
-      <widget class="QOpenGLWidget" name="openGLWidget">
+      <widget class="QGraphicsView" name="graphicsView">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>411</width>
-         <height>241</height>
+         <x>0</x>
+         <y>0</y>
+         <width>661</width>
+         <height>281</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/image/PUBG.jpg);</string>
+       </property>
       </widget>
-      <widget class="QCalendarWidget" name="calendarWidget">
+     </widget>
+     <widget class="QWidget" name="page_11">
+      <widget class="QGraphicsView" name="graphicsView_2">
        <property name="geometry">
         <rect>
-         <x>420</x>
-         <y>40</y>
-         <width>248</width>
-         <height>183</height>
+         <x>0</x>
+         <y>0</y>
+         <width>661</width>
+         <height>281</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/image/gta.jpg);</string>
        </property>
       </widget>
      </widget>
      <widget class="QWidget" name="page_4">
-      <widget class="QOpenGLWidget" name="openGLWidget_2">
+      <widget class="QGraphicsView" name="graphicsView_3">
        <property name="geometry">
         <rect>
-         <x>150</x>
-         <y>50</y>
-         <width>381</width>
-         <height>211</height>
+         <x>0</x>
+         <y>0</y>
+         <width>661</width>
+         <height>291</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/image/human_fall.jpg);</string>
        </property>
       </widget>
      </widget>
@@ -158,36 +172,25 @@
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QStackedWidget" name="stackedWidget_2">
-        <property name="currentIndex">
-         <number>1</number>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/image/gta.jpg);</string>
         </property>
-        <widget class="QWidget" name="page_5">
-         <widget class="QPushButton" name="pushButton_3">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>30</y>
-            <width>75</width>
-            <height>23</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>PushButton</string>
-          </property>
-         </widget>
-        </widget>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_5"/>
         <widget class="QWidget" name="page_6">
-         <widget class="QPushButton" name="pushButton_4">
+         <widget class="QGraphicsView" name="graphicsView_4">
           <property name="geometry">
            <rect>
-            <x>10</x>
-            <y>70</y>
-            <width>75</width>
-            <height>23</height>
+            <x>0</x>
+            <y>10</y>
+            <width>256</width>
+            <height>192</height>
            </rect>
           </property>
-          <property name="text">
-           <string>PushButton</string>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/image/PUBG.jpg);</string>
           </property>
          </widget>
         </widget>
@@ -199,32 +202,29 @@
          <number>1</number>
         </property>
         <widget class="QWidget" name="page_7">
-         <widget class="QPushButton" name="pushButton_5">
+         <widget class="QGraphicsView" name="graphicsView_6">
           <property name="geometry">
            <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>75</width>
-            <height>23</height>
+            <x>0</x>
+            <y>10</y>
+            <width>256</width>
+            <height>192</height>
            </rect>
           </property>
-          <property name="text">
-           <string>PushButton</string>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/image/QQ截图20200523194005.png);</string>
           </property>
          </widget>
         </widget>
         <widget class="QWidget" name="page_8">
-         <widget class="QPushButton" name="pushButton_6">
+         <widget class="QGraphicsView" name="graphicsView_5">
           <property name="geometry">
            <rect>
-            <x>60</x>
-            <y>90</y>
-            <width>75</width>
-            <height>23</height>
+            <x>10</x>
+            <y>20</y>
+            <width>256</width>
+            <height>192</height>
            </rect>
-          </property>
-          <property name="text">
-           <string>PushButton</string>
           </property>
          </widget>
         </widget>
@@ -233,38 +233,10 @@
       <item>
        <widget class="QStackedWidget" name="stackedWidget_4">
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
-        <widget class="QWidget" name="page_9">
-         <widget class="QPushButton" name="pushButton_7">
-          <property name="geometry">
-           <rect>
-            <x>50</x>
-            <y>70</y>
-            <width>75</width>
-            <height>23</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>PushButton</string>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="page_10">
-         <widget class="QPushButton" name="pushButton_8">
-          <property name="geometry">
-           <rect>
-            <x>130</x>
-            <y>70</y>
-            <width>75</width>
-            <height>23</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>PushButton</string>
-          </property>
-         </widget>
-        </widget>
+        <widget class="QWidget" name="page_9"/>
+        <widget class="QWidget" name="page_10"/>
        </widget>
       </item>
      </layout>

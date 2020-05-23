@@ -1,3 +1,9 @@
 <RCC>
     <qresource prefix="/icon"/>
+    <qresource prefix="/">
+        <file>image/PUBG.jpg</file>
+        <file>image/gta.jpg</file>
+        <file>image/human_fall.jpg</file>
+        <file>image/QQ截图20200523194005.png</file>
+    </qresource>
 </RCC>
