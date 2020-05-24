@@ -11,7 +11,11 @@ Stream_hall::Stream_hall(QWidget *parent) :
     four=new circularlist(0,1);
     m_timer=new QTimer(this);
     connect(m_timer,SIGNAL(timeout()),this,SLOT(switchPage()));
-    m_timer->start(2500);
+    m_timer->start(2700);
+
+    ui->scrollArea->setWidgetResizable(false);
+    ui->scrollArea->widget()->resize(3000, 26 * 42 + 25 * 2);
+
 }
 
 

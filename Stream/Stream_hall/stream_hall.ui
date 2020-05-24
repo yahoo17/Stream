@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1097</width>
-    <height>833</height>
+    <width>1207</width>
+    <height>781</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,11 +16,17 @@
   <widget class="QScrollArea" name="scrollArea">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>60</y>
-     <width>811</width>
-     <height>671</height>
+     <x>120</x>
+     <y>70</y>
+     <width>871</width>
+     <height>651</height>
     </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>4000</width>
+     <height>16777215</height>
+    </size>
    </property>
    <property name="widgetResizable">
     <bool>true</bool>
@@ -30,75 +36,16 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>809</width>
-      <height>669</height>
+      <width>869</width>
+      <height>649</height>
      </rect>
     </property>
-    <widget class="QToolBox" name="toolBox">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>470</y>
-       <width>791</width>
-       <height>171</height>
-      </rect>
-     </property>
-     <property name="currentIndex">
-      <number>0</number>
-     </property>
-     <widget class="QWidget" name="page">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>791</width>
-        <height>119</height>
-       </rect>
-      </property>
-      <attribute name="label">
-       <string>Page 1</string>
-      </attribute>
-      <widget class="QPushButton" name="pushButton">
-       <property name="geometry">
-        <rect>
-         <x>290</x>
-         <y>20</y>
-         <width>75</width>
-         <height>23</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>下载</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QWidget" name="page_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>791</width>
-        <height>119</height>
-       </rect>
-      </property>
-      <attribute name="label">
-       <string>Page 2</string>
-      </attribute>
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="geometry">
-        <rect>
-         <x>280</x>
-         <y>20</y>
-         <width>75</width>
-         <height>23</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>下载</string>
-       </property>
-      </widget>
-     </widget>
-    </widget>
+    <property name="maximumSize">
+     <size>
+      <width>40000</width>
+      <height>1500</height>
+     </size>
+    </property>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="geometry">
       <rect>
@@ -148,8 +95,8 @@
       <widget class="QGraphicsView" name="graphicsView_3">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>0</y>
+         <x>-30</x>
+         <y>-10</y>
          <width>781</width>
          <height>291</height>
         </rect>
@@ -165,7 +112,7 @@
       <rect>
        <x>10</x>
        <y>320</y>
-       <width>661</width>
+       <width>791</width>
        <height>151</height>
       </rect>
      </property>
@@ -199,7 +146,7 @@
       <item>
        <widget class="QStackedWidget" name="stackedWidget_3">
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="page_7">
          <widget class="QGraphicsView" name="graphicsView_6">
@@ -212,7 +159,7 @@
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-image: url(:/image/QQ截图20200523194005.png);</string>
+           <string notr="true">background-image: url(:/image/QQ截图20200524130000.png);</string>
           </property>
          </widget>
         </widget>
@@ -220,11 +167,14 @@
          <widget class="QGraphicsView" name="graphicsView_5">
           <property name="geometry">
            <rect>
-            <x>10</x>
-            <y>20</y>
+            <x>0</x>
+            <y>0</y>
             <width>256</width>
             <height>192</height>
            </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/image/QQ截图20200524130006.png);</string>
           </property>
          </widget>
         </widget>
@@ -233,21 +183,168 @@
       <item>
        <widget class="QStackedWidget" name="stackedWidget_4">
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
-        <widget class="QWidget" name="page_9"/>
-        <widget class="QWidget" name="page_10"/>
+        <widget class="QWidget" name="page_9">
+         <widget class="QGraphicsView" name="graphicsView_9">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>256</width>
+            <height>192</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/image/QQ截图20200524130707.png);</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_10">
+         <widget class="QGraphicsView" name="graphicsView_10">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>256</width>
+            <height>192</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/image/QQ截图20200524130717.png);</string>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </item>
      </layout>
+    </widget>
+    <widget class="QGraphicsView" name="graphicsView_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>480</y>
+       <width>521</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/image/QQ截图20200524125001.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>670</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>立即下载</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>700</y>
+       <width>791</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>480</y>
+       <width>231</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;妄想破绽的美术，好！ 妄想破绽的剧情，差！ 妄想破绽的音乐：好听！ 妄想破绽的剧情：狗屎！ 妄想破绽的设定：有趣！ 妄想破绽的剧情：傻逼！ 纸片人的人设：饱满盛东有个性。 屑主角的人设：烂俗恶心无下限。 总结一句话：编剧你能不能去死一死啊？&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="graphicsView_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>720</y>
+       <width>541</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/image/QQ截图20200524130319.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>730</y>
+       <width>231</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt;&quot;&gt;我，亦天凛，被人贴上了所谓不良学生的标签。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>1020</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>立即下载</string>
+     </property>
     </widget>
    </widget>
   </widget>
   <widget class="QPushButton" name="createRoomPushButton">
    <property name="geometry">
     <rect>
-     <x>930</x>
-     <y>160</y>
+     <x>1030</x>
+     <y>190</y>
      <width>131</width>
      <height>91</height>
     </rect>
@@ -259,7 +356,7 @@
   <widget class="QPushButton" name="enterRoomPushButton">
    <property name="geometry">
     <rect>
-     <x>930</x>
+     <x>1020</x>
      <y>400</y>
      <width>131</width>
      <height>91</height>
