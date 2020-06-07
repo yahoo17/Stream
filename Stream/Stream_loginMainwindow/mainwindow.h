@@ -8,7 +8,8 @@
 #include <QMainWindow>
 #include <string>
 #include <QMessageBox>
-
+#include "../filedownloader.h"
+#include <QPainter>
 using namespace  std;
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,11 +31,15 @@ public:
     string getPassword()const;
     QString getLoginUserName();
     QString getLoginPassword();
+    void paintEvent(QPaintEvent* event);
+
+
+
 private slots:
     void on_SignUp_2_clicked();
     void on_adminPushButton_clicked();
 private:
-
+    QPixmap buttonImage;
     Stream_SwitchPage * hallDaemonInstance;
 
 };

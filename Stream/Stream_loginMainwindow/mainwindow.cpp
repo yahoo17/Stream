@@ -6,6 +6,9 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QUrl imageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591427899480&di=6fc08e8b0af4b6c9bcc780bfbfc41221&imgtype=0&src=http%3A%2F%2Fupload.zznews.gov.cn%2F2018%2F0828%2F1535448060428.jpg");
+    FileDownloader *temp = new FileDownloader(imageUrl, this);
+    buttonImage.loadFromData(temp->downloadedData());
 }
 
 MainWindow::~MainWindow()
@@ -38,6 +41,13 @@ QString MainWindow::getLoginPassword()
 {
     return  ui->userLoginpasswordLineEdit->text();
 
+}
+
+void MainWindow::paintEvent(QPaintEvent *event)
+{
+    QPainter painter(this);
+
+    painter.drawPixmap(1000,1000,1000,100,buttonImage);
 }
 
 

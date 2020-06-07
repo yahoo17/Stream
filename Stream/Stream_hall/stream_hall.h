@@ -28,6 +28,7 @@ private slots:
     void on_enterRoomPushButton_clicked();
 
     void on_pushButton_clicked();
+    void download();
 
 
 public slots:

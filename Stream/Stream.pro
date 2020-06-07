@@ -30,6 +30,7 @@ SOURCES += \
     Stream_loginMainwindow/mainwindow.cpp \
     Stream_loginMainwindow/stream_loginsaving.cpp \
     Stream_globaldata/stream_globaldata.cpp \
+    filedownloader.cpp \
     main.cpp
 HEADERS += \
     Stream_database/stream_databasecontroller.h \
@@ -44,7 +45,8 @@ HEADERS += \
     Stream_network/tcpserver.h \
     Stream_loginMainwindow/mainwindow.h \
     Stream_loginMainwindow/stream_loginsaving.h \
-    Stream_globaldata/stream_globaldata.h \
+    Stream_globaldata/stream_globaldata.h \ \
+    filedownloader.h
 
 
 FORMS += \
