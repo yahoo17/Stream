@@ -1,6 +1,8 @@
 ﻿#ifndef STREAM_DATASTRUCTURE_H
 #define STREAM_DATASTRUCTURE_H
-
+/*
+ * 是定义了一个环形链表
+ */
 //链表节点
 class listNode{
 public:

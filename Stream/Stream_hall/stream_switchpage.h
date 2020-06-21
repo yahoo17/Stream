@@ -4,6 +4,12 @@
 #include <QTimer>
 #include <QEventLoop>
 #include "stream_hall.h"
+/**
+ * @brief The Stream_SwitchPage class
+ * 持有Stream_hall对象
+ * 是Stream_hall的管理者
+ * 同时其负责实现page switch的功能
+ */
 class Stream_SwitchPage:public QThread
 {
 public:

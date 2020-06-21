@@ -15,6 +15,10 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+/**
+ * @brief The MainWindow class
+ * 是登陆界面的 注册/登陆的类
+ */
 class MainWindow : public QMainWindow
 {
     Q_OBJECT

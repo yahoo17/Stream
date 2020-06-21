@@ -20,9 +20,4 @@ Stream_GLOBALDATA::Stream_GLOBALDATA()
 
 }
 
-void Stream_GLOBALDATA::saveIt()
-{
-
-}
-
 

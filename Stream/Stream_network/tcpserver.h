@@ -12,7 +12,11 @@
 namespace Ui {
 class TcpServer;
 }
-
+/**
+ * @brief The TcpServer class
+ * 持有Server类对象的实例
+ * 是类似于Server的controller
+ */
 class TcpServer : public QDialog
 {
     Q_OBJECT

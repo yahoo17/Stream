@@ -5,7 +5,6 @@
 #include "ui_stream_hall.h"
 #include "Stream_network/tcpserver.h"
 #include "Stream_network/tcpclient.h"
-#include "Stream_network/stream_networkcontroller.h"
 #include <QTimer>
 #include "Stream_globaldata/stream_datastructure.h"
 #include "Stream_globaldata/stream_globaldata.h"
@@ -13,7 +12,12 @@
 namespace Ui {
 class Stream_hall;
 }
-
+/**
+ *
+ * @brief The Stream_hall class
+ * 是登陆之后用户看到的静态前端
+ * 有打开服务端和客户端的接口
+ */
 class Stream_hall : public QDialog
 {
     Q_OBJECT

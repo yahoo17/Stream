@@ -5,6 +5,10 @@
 #include <string>
 #include <QMessageBox>
 #include "Stream_globaldata/stream_globaldata.h"
+/**
+ * @brief The Stream_loginSaving class
+ * 负责将账号密码持久化保存和检查是否存在
+ */
 class Stream_loginSaving
 {
 public:

@@ -4,6 +4,10 @@
 #include <QObject>
 #include <QTcpServer>
 #include "tcpclientsocket.h"
+/**
+ * @brief The Server class
+ * 实现服务端的逻辑
+ */
 class Server:public QTcpServer
 {
     Q_OBJECT
