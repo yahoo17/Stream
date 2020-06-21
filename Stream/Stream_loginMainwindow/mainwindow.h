@@ -42,9 +42,12 @@ public:
 private slots:
     void on_SignUp_2_clicked();
     void on_adminPushButton_clicked();
+
+    void gotoadmin();
 private:
     QPixmap buttonImage;
     Stream_SwitchPage * hallDaemonInstance;
+    QTimer * m_timer;
 
 };
 #endif // MAINWINDOW_H

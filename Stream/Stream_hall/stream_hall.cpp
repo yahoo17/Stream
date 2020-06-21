@@ -18,7 +18,7 @@ Stream_hall::Stream_hall(QWidget *parent) :
 
     ui->scrollArea->setWidgetResizable(false);
     ui->scrollArea->widget()->resize(3000, 26 * 42 + 25 * 2);
-    download();
+
 
 }
 
@@ -66,8 +66,6 @@ void Stream_hall::on_pushButton_clicked()
 void Stream_hall::download()
 {
 
-
-
     char buffer[MAX_PATH];
     _getcwd(buffer, MAX_PATH);
     strcat_s(buffer, "//1.jpg");
@@ -78,8 +76,6 @@ void Stream_hall::download()
     case E_OUTOFMEMORY: printf("The buffer length is invalid, or there is insufficient memory to complete the operation.\n"); break;
     }
     return ;
-
-
 
 }
 

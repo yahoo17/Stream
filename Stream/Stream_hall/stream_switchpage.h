@@ -10,15 +10,15 @@
  * 是Stream_hall的管理者
  * 同时其负责实现page switch的功能
  */
-class Stream_SwitchPage:public QThread
+class Stream_SwitchPage
 {
 public:
     Stream_SwitchPage();
     ~Stream_SwitchPage();
+    void init();
 private:
     Stream_hall * hallInstance;
-private:
-    QTimer * timer;
+
 };
 
 #endif // STREAM_SWITCHPAGE_H
