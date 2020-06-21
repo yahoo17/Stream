@@ -13,7 +13,13 @@
 namespace Ui {
 class Stream_manageer;
 }
-
+/**
+ * @brief The Stream_manageer class
+ * 是典型的MVC模式
+ * model 也就是我们平时写的类
+ * view 是视图 我们看到的界面
+ * controller 是控制器 后台逻辑
+ */
 class Stream_manageer : public QDialog
 {
     Q_OBJECT

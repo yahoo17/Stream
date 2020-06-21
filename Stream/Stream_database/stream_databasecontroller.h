@@ -38,11 +38,11 @@ static bool createConnection()
     return true;
 }
 
-class Stream_DatabaseController
-{
-public:
-    Stream_DatabaseController();
-    void func();
-};
+//class Stream_DatabaseController
+//{
+//public:
+//    Stream_DatabaseController();
+//    void func();
+//};
 
 #endif // STREAM_DATABASECONTROLLER_H
