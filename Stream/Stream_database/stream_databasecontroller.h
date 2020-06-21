@@ -25,16 +25,12 @@ static bool createConnection()
                               QMessageBox::Cancel);
         return false;
     }
-//    QSqlQuery query;
-//    query.exec("create table student(id int primary key,name varchar,course int)");
-//    query.exec("insert into student values(1,'李强',11)");
-//    query.exec("insert into student values(2,'马亮',11)");
-//    query.exec("insert into student values(3,'孙红',12)");
-//    //创建course表
-//    query.exec("create table coures(id int primary key,name varchar,teacher varchar)");
-//    query.exec("insert into course values(10,'数学','王老师')");
-//    query.exec("insert into course values(10,'英语','张老师')");
-//    query.exec("insert into course values(10,'计算机','白老师')");
+    QSqlQuery query;
+    query.exec("create table game(id int primary key,name varchar,publish_year int,score int )");
+    query.exec("insert into game values(1,'SAO',2011,9)");
+    query.exec("insert into game values(2,'clash of clans',2012,7)");
+    query.exec("insert into game values(3,'LOL',2015,5)");
+
     return true;
 }
 
