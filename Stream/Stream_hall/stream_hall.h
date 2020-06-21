@@ -9,6 +9,7 @@
 #include "Stream_globaldata/stream_datastructure.h"
 #include "Stream_globaldata/stream_globaldata.h"
 #include <QThread>
+#include <Stream_manager/stream_manageer.h>
 namespace Ui {
 class Stream_hall;
 }
@@ -35,6 +36,8 @@ private slots:
     void download();
 
 
+    void on_enterRoomPushButton_2_clicked();
+
 public slots:
 
     void switchPage();
@@ -45,6 +48,7 @@ private:
     QTimer * m_timer;
     TcpServer * tcpserver;
     TcpClient * tcpclient;
+    Stream_manageer * manager;
     circularlist *two;
     circularlist *three;
     circularlist *one;

@@ -4,12 +4,11 @@ Stream_SwitchPage::Stream_SwitchPage()
 {
     hallInstance=new Stream_hall();
     hallInstance->show();
-
-
-
 }
 
-void Stream_SwitchPage::run()
+Stream_SwitchPage::~Stream_SwitchPage()
 {
-
+    delete  hallInstance;
+    hallInstance=nullptr;
 }
+

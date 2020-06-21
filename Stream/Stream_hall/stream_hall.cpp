@@ -82,3 +82,9 @@ void Stream_hall::download()
 
 
 }
+
+void Stream_hall::on_enterRoomPushButton_2_clicked()
+{
+    manager = new Stream_manageer;
+    manager->show();
+}

@@ -35,7 +35,6 @@ bool Stream_loginSaving::checkOnDisk(QString name, QString password)
             tempPassWd=in.readLine();
             if(name==tempName&&password==tempPassWd)
                 return true;
-
         }
 
 

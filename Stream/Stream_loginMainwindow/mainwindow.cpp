@@ -78,7 +78,6 @@ void MainWindow::on_adminPushButton_clicked()
     if(success==true)
     {
           hallDaemonInstance=new Stream_SwitchPage();
-
     }
     else
     {

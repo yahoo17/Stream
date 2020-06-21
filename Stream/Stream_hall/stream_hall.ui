@@ -356,8 +356,8 @@ p, li { white-space: pre-wrap; }
   <widget class="QPushButton" name="enterRoomPushButton">
    <property name="geometry">
     <rect>
-     <x>1020</x>
-     <y>400</y>
+     <x>1030</x>
+     <y>330</y>
      <width>131</width>
      <height>91</height>
     </rect>
@@ -442,6 +442,19 @@ p, li { white-space: pre-wrap; }
      <width>50</width>
      <height>64</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="enterRoomPushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>470</y>
+     <width>131</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>游戏管理</string>
    </property>
   </widget>
  </widget>

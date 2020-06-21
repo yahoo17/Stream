@@ -21,6 +21,7 @@ SOURCES += \
     Stream_globaldata/stream_datastructure.cpp \
     Stream_hall/stream_hall.cpp \
     Stream_hall/stream_switchpage.cpp \
+    Stream_manager/stream_manageer.cpp \
     Stream_network/server.cpp \
     Stream_network/stream_networkinfo.cpp \
     Stream_network/tcpclient.cpp \
@@ -36,6 +37,7 @@ HEADERS += \
     Stream_globaldata/stream_datastructure.h \
     Stream_hall/stream_hall.h \
     Stream_hall/stream_switchpage.h \
+    Stream_manager/stream_manageer.h \
     Stream_network/server.h \
     Stream_network/stream_networkinfo.h \
     Stream_network/tcpclient.h \
@@ -49,6 +51,7 @@ HEADERS += \
 
 FORMS += \
     Stream_hall/stream_hall.ui \
+    Stream_manager/stream_manageer.ui \
     Stream_network/tcpclient.ui \
     Stream_network/tcpserver.ui \
     Stream_loginMainwindow/mainwindow.ui \

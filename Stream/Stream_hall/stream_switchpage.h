@@ -14,10 +14,9 @@ class Stream_SwitchPage:public QThread
 {
 public:
     Stream_SwitchPage();
+    ~Stream_SwitchPage();
 private:
     Stream_hall * hallInstance;
-public:
-    void run() ;
 private:
     QTimer * timer;
 };

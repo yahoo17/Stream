@@ -6,7 +6,10 @@
 #include <QNetworkAccessManager>
 #include <QNetworkRequest>
 #include <QNetworkReply>
-
+/**
+ * @brief The FileDownloader class
+ * 暂时没用到
+ */
 class FileDownloader : public QObject
 {
  Q_OBJECT
