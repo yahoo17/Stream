@@ -4,6 +4,10 @@
 #include <QList>
 #include <QHostInfo>
 #include<QNetworkInterface>
+/**
+ * @brief The Stream_networkInfo class
+ * 这里实现了一下工具方法
+ */
 class Stream_networkInfo
 {
 public:

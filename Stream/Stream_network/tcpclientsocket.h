@@ -3,6 +3,10 @@
 #include <QTcpSocket>
 #include <QObject>
 
+/**
+ * @brief The TcpClientSocket class
+ * 本类是对TcpSocket做的一些封装
+ */
 class TcpClientSocket : public QTcpSocket
 {
     Q_OBJECT

@@ -13,7 +13,11 @@
 namespace Ui {
 class TcpClient;
 }
-
+/**
+ * @brief The TcpClient class
+ * 此类负责客户端的全部
+ * 包括逻辑和界面
+ */
 class TcpClient : public QDialog
 {
     Q_OBJECT
